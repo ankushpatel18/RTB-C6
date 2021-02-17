@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cvUserCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        android:layout_margin="@dimen/margin_small">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:id="@+id/ivRestaurant"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@color/colorPrimary"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+                android:id="@+id/tvCuisine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black_semi_transparent"
+                android:maxWidth="150dp"
+                android:padding="5dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/text_color_blue"
+                app:layout_constraintStart_toStartOf="@id/ivRestaurant"
+                app:layout_constraintTop_toTopOf="@id/ivRestaurant" />
+
+        <TextView
+                android:id="@+id/tvRestaurantName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins_medium"
+                android:maxLines="1"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                app:layout_constraintStart_toEndOf="@id/ivRestaurant"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="10dp"
+                app:layout_constraintStart_toEndOf="@id/ivRestaurant"
+                app:layout_constraintTop_toBottomOf="@id/tvRestaurantName" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
