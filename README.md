@@ -9,8 +9,7 @@
 
 ### Libraries
  - Dagger 2
- - RxJava2
- - Architecture Components(ViewModel, LiveData, Navigation Controller)
+ - Architecture Components(ViewModel, LiveData)
  - Glide Image Loading.
  
  ### Features and Screens
@@ -19,7 +18,7 @@
      
 
 ### Screenshot of the application
-<img src = "screenshots/search_result_page.png" width=170 height=280/><img src = "screenshots/user_profile_page.png" width=170 height=280/><img src = "screenshots/share_intent_popup.png" width=170 height=280/><img src = "screenshots/search_empty_page.png" width=170 height=280/><img src = "screenshots/paralax_tab.png" width=170 height=280/>
+<img src = "screenshots/11Restaurants-list.png" width=170 height=280/><img src = "screenshots/2dinepoint-list.png" width=170 height=280/><img src = "screenshots/3photo-gallery .png" width=170 height=280/><img src = "screenshots/4.recentbooking-list.png" width=170 height=280/>
 
 ### Setup
    - Clone the Repo
