@@ -27,7 +27,7 @@ abstract class BaseActivity <out V: ViewModel>: AppCompatActivity() {
         progressDialog = Dialog(this)
         progressDialog.setCancelable(false)
         progressDialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
-        progressDialog.window.setBackgroundDrawableResource(android.R.color.transparent)
+        progressDialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
         progressDialog.setContentView(R.layout.dialog_progress)
     }
 

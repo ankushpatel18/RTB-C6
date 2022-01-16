@@ -66,11 +66,11 @@ class BookingsActivity : BaseActivity<BookingViewModel>() {
         })
     }
 
-    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return if (item?.itemId == android.R.id.home) {
             finish()
             true
         } else
             super.onOptionsItemSelected(item)
     }
-}
+    }

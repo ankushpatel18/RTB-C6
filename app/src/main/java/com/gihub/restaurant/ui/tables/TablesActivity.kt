@@ -38,7 +38,7 @@ class TablesActivity : BaseActivity<TableViewModel>(), TableListAdapter.OnItemCl
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         selectedRestaurantId = intent.getIntExtra(Constants.ParamsConst.RESTAURANT_ID, 0)
-        selectedRestaurantName = intent.getStringExtra(Constants.ParamsConst.RESTAURANT_NAME)
+        selectedRestaurantName = intent.getStringExtra(Constants.ParamsConst.RESTAURANT_NAME)!!
         setContentView(R.layout.activity_table_selection)
         initToolbar()
         tableListAdapter =
@@ -76,8 +76,8 @@ class TablesActivity : BaseActivity<TableViewModel>(), TableListAdapter.OnItemCl
         })
     }
 
-    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
-        return if (item?.itemId == android.R.id.home) {
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return if (item.itemId == android.R.id.home) {
             finish()
             true
         } else
